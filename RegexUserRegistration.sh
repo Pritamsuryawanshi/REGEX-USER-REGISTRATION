@@ -5,7 +5,8 @@ echo "Welcome to REGEX user registration exercises"
 
 read -p "Enter the your name with first letter as CAPITAL: " firstName
 
-firstNamePattern="^([A-Z]{1}[a-zA-Z]*)$"
+firstNamePattern="^([A-Z]{1}[a-zA-Z]{2,})$"
+
 if [[ $firstName =~  $firstNamePattern ]]
 then
 	echo "VALID"
